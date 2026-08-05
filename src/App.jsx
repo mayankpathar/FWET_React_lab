@@ -15,12 +15,13 @@ function App() {
   <Helloc/> */}
 
   {/* lab-2 */}
-  <div class="page">
+  {/* <div class="page">
     <Header/>
     <Menubar/>
     <Mainco/>
     <Footer/>
-  </div>
+  </div> */}
+  {/* lab-3 */}
   </>)
 }
 
