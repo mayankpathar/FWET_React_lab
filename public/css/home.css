@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #667eea;
+    border: none;
+    border-radius: 5px;
+   
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #764ba2;
+}
+
+nav button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+article img {
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+article p {
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+article ul {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+article li {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+list {
+    display: block;
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    nav {
+         flex-wrap: wrap;
+        padding: 14px;
+        gap: 8px;
+    }
+    
+    nav button {
+        padding: 9px 14px;
+        margin: 3px;
+    }
+    
+    article img {
+        width: 100%;
+        height: auto;
+    }
+}
