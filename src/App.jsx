@@ -5,7 +5,7 @@ import Mainco from "./lab-2/Mainco"
 import Footer from "./lab-2/Footer"
 import A1 from "./lab-3/A1"
 import B1 from "./lab-3/B1"
-import B1 from "./lab-3/C1"
+import C1 from "./lab-3/C1"
 import Atable from "./lab-4/Atable"
 import Acard from "./lab-4/Acard"
 
