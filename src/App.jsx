@@ -10,12 +10,13 @@
 // import Acard from "./lab-4/Acard"
 // import Map_List from "./lab-4/Map_List"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./lab-5/a/Layout";
+import Layouta from "./lab-5/a/Layouta";
 import Home from "./lab-5/a/Home";
 import About from "./lab-5/a/About";
 import Galary from "./lab-5/a/Galary";
 import Contect from "./lab-5/a/Contect";
 import Sing from "./lab-5/a/Sing";
+import Layoutb from "./lab-5/b/Layoutb";
 import A1 from "./lab-5/b/A1";
 import A2 from "./lab-5/b/A2";
 import A3 from "./lab-5/b/A3";
@@ -34,6 +35,7 @@ import A15 from "./lab-5/b/A15";
 import Usesatate from "./lab-6/Usesatate";
 import Useeffect from "./lab-6/Useeffect";
 import Hideshowhook from "./lab-6/Hideshowhook";
+
 
 function App() {
 
@@ -62,7 +64,7 @@ function App() {
     {/* lab-5 */}
      {/* <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layouta />}>
             <Route index element={<Home />} />
             <Route path="/Home" element={<Home />} />
             <Route path="/About" element={<About />} />
@@ -72,9 +74,9 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layoutb />}>
             <Route index element={<A1 />} />
             <Route path="/A1" element={<A1 />} />
             <Route path="/A2" element={<A2 />} />
@@ -91,13 +93,14 @@ function App() {
             <Route path="/A13" element={<A13 />} />
             <Route path="/A14" element={<A14 />} />
             <Route path="/A15" element={<A15 />} />
+            
           </Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* lab-6 */}
       {/* <Usesatate /> */}
       {/* <Useeffect/> */}
-      <Hideshowhook/>
+      {/* <Hideshowhook/> */}
   </>)
 }
 

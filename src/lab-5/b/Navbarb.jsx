@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbarb() {
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -12,7 +13,7 @@ function Navbar() {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <Link to="/">A1</Link>
+                                <Link to="/A1">A1</Link>
                             </li>
                             <li class="nav-item">
                                 <Link to="/A2">A2</Link>
@@ -54,7 +55,7 @@ function Navbar() {
                                 <Link to="/A14">A14</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/A15">A15   </Link>
+                                <Link to="/A15">A15</Link>
                             </li>
 
                         </ul>
@@ -66,4 +67,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbarb

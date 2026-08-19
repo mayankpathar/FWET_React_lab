@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from './Navbara'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 
-function Layout() {
+function Layouta() {
   return (
     <div>
-      <Navbar/>
+      <Navbara/>
       <hr/>
       <Outlet/>
       <hr/>
@@ -16,4 +16,4 @@ function Layout() {
 }
 
 
-export default Layout
+export default Layouta
