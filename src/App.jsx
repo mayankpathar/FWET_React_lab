@@ -31,6 +31,9 @@ import A12 from "./lab-5/b/A12";
 import A13 from "./lab-5/b/A13";
 import A14 from "./lab-5/b/A14";
 import A15 from "./lab-5/b/A15";
+import Usesatate from "./lab-6/Usesatate";
+import Useeffect from "./lab-6/Useeffect";
+import Hideshowhook from "./lab-6/Hideshowhook";
 
 function App() {
 
@@ -69,7 +72,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<A1 />} />
@@ -90,8 +93,11 @@ function App() {
             <Route path="/A15" element={<A15 />} />
           </Route>
         </Routes>
-      </BrowserRouter>
-
+      </BrowserRouter> */}
+      {/* lab-6 */}
+      {/* <Usesatate /> */}
+      {/* <Useeffect/> */}
+      <Hideshowhook/>
   </>)
 }
 
