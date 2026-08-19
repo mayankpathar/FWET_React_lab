@@ -10,12 +10,27 @@
 // import Acard from "./lab-4/Acard"
 // import Map_List from "./lab-4/Map_List"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./lab-5/a/Home"
-import Layout from "./lab-5/a/Layout"
-import About from "./lab-5/a/About"
-import Galary from "./lab-5/a/Galary"
-import Contect from "./lab-5/a/Contect"
-import Sing from "./lab-5/a/Sing"
+import Layout from "./lab-5/a/Layout";
+import Home from "./lab-5/a/Home";
+import About from "./lab-5/a/About";
+import Galary from "./lab-5/a/Galary";
+import Contect from "./lab-5/a/Contect";
+import Sing from "./lab-5/a/Sing";
+import A1 from "./lab-5/b/A1";
+import A2 from "./lab-5/b/A2";
+import A3 from "./lab-5/b/A3";
+import A4 from "./lab-5/b/A4";
+import A5 from "./lab-5/b/A5";
+import A6 from "./lab-5/b/A6";
+import A7 from "./lab-5/b/A7";
+import A8 from "./lab-5/b/A8";
+import A9 from "./lab-5/b/A9";
+import A10 from "./lab-5/b/A10";
+import A11 from "./lab-5/b/A11";
+import A12 from "./lab-5/b/A12";
+import A13 from "./lab-5/b/A13";
+import A14 from "./lab-5/b/A14";
+import A15 from "./lab-5/b/A15";
 
 function App() {
 
@@ -42,7 +57,7 @@ function App() {
     {/* <Acard /> */}
     {/* <Map_List /> */}
     {/* lab-5 */}
-     <BrowserRouter>
+     {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -53,7 +68,30 @@ function App() {
             <Route path="/Sing" element={<Sing />} />
           </Route>
         </Routes>
+      </BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<A1 />} />
+            <Route path="/A1" element={<A1 />} />
+            <Route path="/A2" element={<A2 />} />
+            <Route path="/A3" element={<A3 />} />
+            <Route path="/A4" element={<A4 />} />
+            <Route path="/A5" element={<A5 />} />
+            <Route path="/A6" element={<A6 />} />
+            <Route path="/A7" element={<A7 />} />
+            <Route path="/A8" element={<A8 />} />
+            <Route path="/A9" element={<A9 />} />
+            <Route path="/A10" element={<A10 />} />
+            <Route path="/A11" element={<A11 />} />
+            <Route path="/A12" element={<A12 />} />
+            <Route path="/A13" element={<A13 />} />
+            <Route path="/A14" element={<A14 />} />
+            <Route path="/A15" element={<A15 />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
+
   </>)
 }
 
