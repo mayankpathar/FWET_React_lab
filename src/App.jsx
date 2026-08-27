@@ -34,7 +34,8 @@
 // import A15 from "./lab-5/b/A15";
 // import Usesatate from "./lab-6/UseSatate";
 import { useState } from "react";
-import A from "./lab-7/b/A";
+import Appcontent from "./lab-8/Appcontent";
+// import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
 
@@ -42,7 +43,7 @@ import A from "./lab-7/b/A";
 
 function App() {
 
-const [name,setname] = useState("");
+// const [name,setname] = useState("");
   return (<>
     {/* lab-1 */}
     {/* <h1>hello world</h1>
@@ -107,6 +108,8 @@ const [name,setname] = useState("");
       {/* lab-7 */}
      {/* <A name={name} setname={setname}/> */}
      {/* <A name={name} setname={setname}/> */}
+     {/* lab-8 */}
+     <Appcontent/>
   </>)
 }
 
