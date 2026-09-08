@@ -35,6 +35,7 @@
 // import Usesatate from "./lab-6/UseSatate";
 import { useState } from "react";
 import Appcontent from "./lab-8/Appcontent";
+import Simple_calculator from "./lab-9/Simple_calculator";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
@@ -109,7 +110,9 @@ function App() {
      {/* <A name={name} setname={setname}/> */}
      {/* <A name={name} setname={setname}/> */}
      {/* lab-8 */}
-     <Appcontent/>
+     {/* <Appcontent/> */}
+     {/* lab-9 */}
+     <Simple_calculator/>
   </>)
 }
 
