@@ -36,6 +36,7 @@
 import { useState } from "react";
 import Appcontent from "./lab-8/Appcontent";
 import Simple_calculator from "./lab-9/Simple_calculator";
+import Scientific_calculator from "./lab-9/Scientific_calculator";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
@@ -112,7 +113,8 @@ function App() {
      {/* lab-8 */}
      {/* <Appcontent/> */}
      {/* lab-9 */}
-     <Simple_calculator/>
+     {/* <Simple_calculator/> */}
+     <Scientific_calculator/>
   </>)
 }
 
