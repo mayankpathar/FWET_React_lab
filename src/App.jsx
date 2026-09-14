@@ -37,6 +37,7 @@ import { useState } from "react";
 import Appcontent from "./lab-8/Appcontent";
 import Simple_calculator from "./lab-9/Simple_calculator";
 import Scientific_calculator from "./lab-9/Scientific_calculator";
+import Crud from "./lab-10/Crud";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
@@ -45,7 +46,7 @@ import Scientific_calculator from "./lab-9/Scientific_calculator";
 
 function App() {
 
-// const [name,setname] = useState("");
+  // const [name,setname] = useState("");
   return (<>
     {/* lab-1 */}
     {/* <h1>hello world</h1>
@@ -68,7 +69,7 @@ function App() {
     {/* <Acard /> */}
     {/* <Map_List /> */}
     {/* lab-5 */}
-     {/* <BrowserRouter>
+    {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layouta />}>
             <Route index element={<Home />} />
@@ -80,7 +81,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      {/* <BrowserRouter>
+    {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layoutb />}>
             <Route index element={<A1 />} />
@@ -103,18 +104,19 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      {/* lab-6 */}
-      {/* <Usesatate /> */}
-      {/* <Useeffect/> */}
-      {/* <Hideshowhook/> */}
-      {/* lab-7 */}
-     {/* <A name={name} setname={setname}/> */}
-     {/* <A name={name} setname={setname}/> */}
-     {/* lab-8 */}
-     {/* <Appcontent/> */}
-     {/* lab-9 */}
-     {/* <Simple_calculator/> */}
-     <Scientific_calculator/>
+    {/* lab-6 */}
+    {/* <Usesatate /> */}
+    {/* <Useeffect/> */}
+    {/* <Hideshowhook/> */}
+    {/* lab-7 */}
+    {/* <A name={name} setname={setname}/> */}
+    {/* <A name={name} setname={setname}/> */}
+    {/* lab-8 */}
+    {/* <Appcontent/> */}
+    {/* lab-9 */}
+    {/* <Simple_calculator/> */}
+    {/* lab-10 */}
+    <Crud/>
   </>)
 }
 
