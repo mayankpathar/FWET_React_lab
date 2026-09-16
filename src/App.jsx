@@ -38,6 +38,7 @@ import Appcontent from "./lab-8/Appcontent";
 import Simple_calculator from "./lab-9/Simple_calculator";
 import Scientific_calculator from "./lab-9/Scientific_calculator";
 import CRUD1 from "./lab-10/CRUD1";
+import Crud from "./lab-10/Crud";
 import A1 from "./lab-11/A1";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
@@ -116,9 +117,12 @@ function App() {
     {/* <Appcontent/> */}
     {/* lab-9 */}
     {/* <Simple_calculator/> */}
+    {/* <Scientific_calculator/> */}
     {/* lab-10 */}
+    {/* <Crud/> */}
     {/* <CRUD1 /> */}
-    <A1/>
+    {/* <A1/> */}
+    
   </>)
 }
 
