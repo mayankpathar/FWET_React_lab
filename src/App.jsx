@@ -9,7 +9,7 @@
 // import Atable from "./lab-4/Atable"
 // import Acard from "./lab-4/Acard"
 // import Map_List from "./lab-4/Map_List"
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Layouta from "./lab-5/a/Layouta";
 // import Home from "./lab-5/a/Home";
 // import About from "./lab-5/a/About";
@@ -33,13 +33,15 @@
 // import A14 from "./lab-5/b/A14";
 // import A15 from "./lab-5/b/A15";
 // import Usesatate from "./lab-6/UseSatate";
-import { useState } from "react";
-import Appcontent from "./lab-8/Appcontent";
-import Simple_calculator from "./lab-9/Simple_calculator";
-import Scientific_calculator from "./lab-9/Scientific_calculator";
-import CRUD1 from "./lab-10/CRUD1";
-import Crud from "./lab-10/Crud";
+// import { useState } from "react";
+// import Appcontent from "./lab-8/Appcontent";
+// import Simple_calculator from "./lab-9/Simple_calculator";
+// import Scientific_calculator from "./lab-9/Scientific_calculator";
+// import CRUD1 from "./lab-10/CRUD1";
+// import Crud from "./lab-10/Crud";
 import A1 from "./lab-11/A1";
+import StudentDetails from "./lab-11/StudentDetails";
+import StudentForm from "./lab-11/Studentfrom";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
@@ -121,8 +123,15 @@ function App() {
     {/* lab-10 */}
     {/* <Crud/> */}
     {/* <CRUD1 /> */}
-    {/* <A1/> */}
-    
+
+    <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<A1 />} />
+    <Route path="/studentdetails/:id" element={<StudentDetails />} />
+    <Route path="/studentform" element={<StudentForm />} />
+    <Route path="/studentform/:id" element={<StudentForm />} />
+  </Routes>
+</BrowserRouter>
   </>)
 }
 
