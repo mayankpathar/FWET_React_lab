@@ -16,7 +16,8 @@ function StudentForm() {
     phone: "",
     address: "",
     product: "",
-    campany: ""
+    campany: "",
+    image: ""
   });
 
   useEffect(() => {
@@ -60,7 +61,7 @@ function StudentForm() {
           <input
             className="form-control"
             name="student"
-            value={formData.student || ""}
+            value={formData.student}
             onChange={handleChange}
           />
         </div>
@@ -69,7 +70,16 @@ function StudentForm() {
           <input
             className="form-control"
             name="dapartment"
-            value={formData.dapartment || ""}
+            value={formData.dapartment}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-2">
+          <label className="form-label">Image</label>
+          <input
+            className="form-control"
+            name="image"
+            value={formData.image }
             onChange={handleChange}
           />
         </div>
@@ -79,7 +89,7 @@ function StudentForm() {
             className="form-control"
             name="email"
             type="email"
-            value={formData.email || ""}
+            value={formData.email}
             onChange={handleChange}
           />
         </div>
@@ -88,7 +98,7 @@ function StudentForm() {
           <input
             className="form-control"
             name="phone"
-            value={formData.phone || ""}
+            value={formData.phone }
             onChange={handleChange}
           />
         </div>
@@ -97,7 +107,7 @@ function StudentForm() {
           <input
             className="form-control"
             name="address"
-            value={formData.address || ""}
+            value={formData.address }
             onChange={handleChange}
           />
         </div>

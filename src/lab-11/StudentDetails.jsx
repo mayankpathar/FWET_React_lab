@@ -32,8 +32,8 @@ function StudentDetails() {
       <div className="card p-3">
         <div className="d-flex align-items-center mb-3">
           <img
-            src={student.image || student.avatar || student.img || "https://via.placeholder.com/120x120?text=Student"}
-            alt={student.student || "Student image"}
+            src={student.image}
+            alt={student.student}
             style={{ width: "120px", height: "120px", objectFit: "cover", borderRadius: "12px", border: "1px solid #ddd" }}
           />
         </div>

@@ -46,8 +46,8 @@ function A1() {
               <td style={tableStyle}>{index + 1}</td>
               <td style={tableStyle}>
                 <img
-                  src={item.image || item.avatar || item.img || "https://via.placeholder.com/50x50?text=Student"}
-                  alt={item.student || "Student"}
+                  src={item.image}
+                  alt={item.student}
                   style={{ width: "50px", height: "50px", objectFit: "cover", borderRadius: "8px" }}
                 />
               </td>
