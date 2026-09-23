@@ -1,13 +1,14 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 function StudentDetails() {
   const API_URL = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min";
 
   const [student, setStudent] = useState({});
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${API_URL}/${id}`)
@@ -21,7 +22,7 @@ function StudentDetails() {
     })
       .then((res) => res.json())
       .then(() => {
-        window.location.href = "/";
+       navigate("/")
       });
   };
 
