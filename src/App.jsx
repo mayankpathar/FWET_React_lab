@@ -10,10 +10,18 @@
 // import Acard from "./lab-4/Acard"
 // import Map_List from "./lab-4/Map_List"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useUser } from "./lab-12/useUser";
-import Home from "./lab-12/Home";
-import { UserProvider } from "./lab-12/UserContext";
-import Login from "./lab-12/Login";
+// import { useUser } from "./lab-12/useUser";
+// import Home from "./lab-12/Home";
+// import { UserProvider } from "./lab-12/UserContext";
+// import Login from "./lab-12/Login";
+// import Layout from "./lab-13/Layout";
+// import ListStudents from "./lab-13/ListStudents";
+// import AddStudent from "./lab-13/AddStudent";
+// import EditStudent from "./lab-13/EditStudent";
+// import DetailStudnet from "./lab-13/DetailStudnet";
+// import ListFaculties from "./lab-13/ListFaculties";
+// import AddFaculty from "./lab-13/AddFaculty";
+// import EditFaculty from "./lab-13/EditFaculty";
 // import Layouta from "./lab-5/a/Layouta";
 // import Home from "./lab-5/a/Home";
 // import About from "./lab-5/a/About";
@@ -43,9 +51,9 @@ import Login from "./lab-12/Login";
 // import Scientific_calculator from "./lab-9/Scientific_calculator";
 // import CRUD1 from "./lab-10/CRUD1";
 // import Crud from "./lab-10/Crud";
-// import A1 from "./lab-11/A1";
-// import StudentDetails from "./lab-11/StudentDetails";
-// import StudentForm from "./lab-11/Studentfrom";
+import A1 from "./lab-11/A1";
+import StudentDetails from "./lab-11/StudentDetails";
+import StudentForm from "./lab-11/Studentfrom";
 // import A from "./lab-7/b/A";
 // import A from "./lab-7/a/A";
 
@@ -131,17 +139,30 @@ function App() {
     {/* <Crud/> */}
     {/* <CRUD1 /> */}
 
-    {/* <BrowserRouter>
+    <BrowserRouter>
   <Routes>
     <Route path="/" element={<A1 />} />
     <Route path="/studentdetails/:id" element={<StudentDetails />} />
     <Route path="/studentform" element={<StudentForm />} />
     <Route path="/studentform/:id" element={<StudentForm />} />
   </Routes>
-</BrowserRouter> */}
-   <UserProvider>
+</BrowserRouter>
+   {/* <UserProvider>
      <AppContext/>
-   </UserProvider>
+   </UserProvider> */}
+    {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/students" element={<ListStudents />} />
+            <Route path="/students/add" element={<AddStudent />} />
+            <Route path="/students/edit/:id" element={<EditStudent />} />
+            <Route path="/students/:id" element={<DetailStudnet />} />
+            <Route path="/faculties" element={<ListFaculties />} />
+            <Route path="/faculties/add" element={<AddFaculty />} />
+            <Route path="/faculties/edit/:id" element={<EditFaculty />} />
+          </Route>
+        </Routes>
+      </BrowserRouter> */}
 
   </>)
 }
