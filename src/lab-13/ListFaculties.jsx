@@ -32,7 +32,7 @@ function ListFaculties() {
                     <button
                       onClick={() => {
                         fetch(
-                          import.meta.env.VITE_APIURL + "faculties/" + fac.id,
+                          "https://6a3b636ce4a07f202e14db14.mockapi.io/student/" + fac.id,
                           {
                             method: "DELETE",
                           },

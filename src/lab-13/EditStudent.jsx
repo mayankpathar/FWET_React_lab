@@ -5,10 +5,10 @@ function EditStudent() {
   const [data, setData] = useState({});
   const navigate = useNavigate();
   const { id } = useParams();
-const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
+const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min/";
 
   useEffect(() => {
-    fetch(apiUrl, { method: "GET" })
+    fetch(apiUrl +id, { method: "GET" })
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
@@ -21,9 +21,9 @@ const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
           <td>
             <input
               type="text"
-              value={data.StudentName}
+              value={data.student}
               onChange={(e) =>
-                setData({ ...data, StudentName: e.target.value })
+                setData({ ...data, student: e.target.value })
               }
             />
           </td>
@@ -33,33 +33,21 @@ const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
           <td>
             <input
               type="text"
-              value={data.StudentImage}
+              value={data.image}
               onChange={(e) =>
-                setData({ ...data, StudentImage: e.target.value })
+                setData({ ...data, image: e.target.value })
               }
             />
           </td>
         </tr>
         <tr>
-          <td>Enter Student Roll No</td>
+          <td>Enter Student address</td>
           <td>
             <input
               type="text"
-              value={data.StudentRollNo}
+              value={data.address}
               onChange={(e) =>
-                setData({ ...data, StudentRollNo: e.target.value })
-              }
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>Enter Student Mobile Number</td>
-          <td>
-            <input
-              type="text"
-              value={data.StudentMobileNumber}
-              onChange={(e) =>
-                setData({ ...data, StudentMobileNumber: e.target.value })
+                setData({ ...data, address: e.target.value })
               }
             />
           </td>
@@ -69,9 +57,21 @@ const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
           <td>
             <input
               type="text"
-              value={data.StudentDepartment}
+              value={data.phone}
               onChange={(e) =>
-                setData({ ...data, StudentDepartment: e.target.value })
+                setData({ ...data, phone: e.target.value })
+              }
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Student </td>
+          <td>
+            <input
+              type="text"
+              value={data.dapartment}
+              onChange={(e) =>
+                setData({ ...data, dapartment: e.target.value })
               }
             />
           </td>
@@ -81,7 +81,7 @@ const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
             <button
               onClick={() => {
                 fetch(
-                   "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id,
+                   "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min/" + id,
                   {
                     method: "PUT",
                     body: JSON.stringify(data),
@@ -91,13 +91,13 @@ const apiUrl = "https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min" + id;
                   },
                 )
                   .then((res) => res.json())
-                  .then((res) => navigate("/students"));
+                  .then((res) => navigate("/"));
               }}
               className="btn btn-primary"
             >
               Save
             </button>
-            <Link to="/students" className="btn btn-secondary">
+            <Link to="/" className="btn btn-secondary">
               Back
             </Link>
           </td>

@@ -4,11 +4,11 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 function EditFaculty() {
   const { id } = useParams();
   const [data, setData] = useState({});
-  const [msg, setMsg] = useState("");
+  const [msg, setMsg] = useState("hello");
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(import.meta.env.VITE_APIURL + "faculties/" + id, {
+    fetch("https://6a3b636ce4a07f202e14db14.mockapi.io/student/" + id, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -61,27 +61,20 @@ function EditFaculty() {
         </tr>
         <tr>
           <td colSpan={2} align="center">
-            <button
+             <button
               onClick={() => {
-                if (data?.facultyName?.length > 0) {
-                  fetch(
-                    "https://62d6c51451e6e8f06f12bd5d.mockapi.io/faculties/" +
-                      id,
-                    {
-                      method: "PUT",
-                      body: JSON.stringify(data),
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
+                fetch(
+                   "https://6a3b636ce4a07f202e14db14.mockapi.io/student/" + id,
+                  {
+                    method: "PUT",
+                    body: JSON.stringify(data),
+                    headers: {
+                      "Content-Type": "application/json",
                     },
-                  )
-                    .then((res) => res.json())
-                    .then((res) => {
-                      navigate("/faculties");
-                    });
-                } else {
-                  setMsg("Please enter faculty name");
-                }
+                  },
+                )
+                  .then((res) => res.json())
+                  .then((res) => navigate("/faculties"));
               }}
               className="btn btn-primary"
             >

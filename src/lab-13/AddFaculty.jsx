@@ -51,12 +51,12 @@ function AddFaculty() {
             <button
               onClick={() => {
                 if (data?.facultyName?.length > 0) {
-                  fetch(import.meta.env.VITE_APIURL + "faculties", {
+                  fetch("https://6a3b636ce4a07f202e14db14.mockapi.io/student", {
                     method: "POST",
-                    body: JSON.stringify(data),
                     headers: {
                       "Content-Type": "application/json",
                     },
+                    body: JSON.stringify(data)
                   })
                     .then((res) => res.json())
                     .then((res) => {

@@ -6,10 +6,10 @@ function DetailStudnet() {
   const navigate = useNavigate();
   const [data, setData] = useState({});
   const [isDeleting, setIsDeleting] = useState(false);
-  const apiUrl ="https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min";
+  const apiUrl ="https://6a3b636ce4a07f202e14db14.mockapi.io/mock8min/";
 
   useEffect(() => {
-    fetch(apiUrl, { method: "GET" })
+    fetch(apiUrl +id, { method: "GET" })
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
@@ -25,7 +25,6 @@ function DetailStudnet() {
             <h1>Name: {data.student}</h1>
             <p>email: {data.email}</p>
             <p>phone: {data.phone}</p>
-            <p>Age: {data.StudentAge}</p>
             <p>Dept: {data.dapartment}</p>
             <p>address: {data.address}</p>
              <p>product: {data.product}</p>
@@ -35,9 +34,9 @@ function DetailStudnet() {
             <button
               onClick={() => {
                 setIsDeleting(true);
-                fetch(apiUrl, { method: "DELETE" })
+                fetch(apiUrl +id, { method: "DELETE" })
                   .then((res) => res.json())
-                  .then((res) => navigate("/students"));
+                  .then((res) => navigate("/"));
               }}
               className="btn btn-danger"
               disabled={isDeleting}
@@ -54,7 +53,7 @@ function DetailStudnet() {
               Edit
             </Link>
             &nbsp;
-            <Link to="/students" className="btn btn-info">
+            <Link to="/" className="btn btn-info">
               Back
             </Link>
           </div>
