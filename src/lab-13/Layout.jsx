@@ -47,6 +47,24 @@ function Layout() {
                         Faculties
                       </Link>
                     </li>
+                    <li class="nav-item">
+                      <Link
+                        class="nav-link active"
+                        aria-current="page"
+                        to="/Product"
+                      >
+                        product
+                      </Link>
+                    </li>
+                    <li class="nav-item">
+                      <Link
+                        class="nav-link active"
+                        aria-current="page"
+                        to="/book"
+                      >
+                        Book
+                      </Link>
+                    </li>
                   </ul>
                   <form class="d-flex" role="search">
                     <input

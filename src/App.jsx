@@ -22,6 +22,12 @@ import DetailStudnet from "./lab-13/DetailStudnet";
 import ListFaculties from "./lab-13/ListFaculties";
 import AddFaculty from "./lab-13/AddFaculty";
 import EditFaculty from "./lab-13/EditFaculty";
+import Listproduct from "./lab-13/Listproduct";
+import Listbook from "./lab-13/Listbook";
+import Addproduct from "./lab-13/Addproduct";
+import Addbook from "./lab-13/Addbook";
+import Editproduct from "./lab-13/Editproduct";
+import Editbook from "./lab-13/Editbook";
 // import Layouta from "./lab-5/a/Layouta";
 // import Home from "./lab-5/a/Home";
 // import About from "./lab-5/a/About";
@@ -59,8 +65,8 @@ import EditFaculty from "./lab-13/EditFaculty";
 
 
 function AppContext () {
-   const {user}= useUser()
-   return user ? <Home/>:<Login/>
+  //  const {user}= useUser()
+  //  return user ? <Home/>:<Login/>
 }
 
 function App() {
@@ -160,6 +166,12 @@ function App() {
             <Route path="/faculties" element={<ListFaculties />} />
             <Route path="/faculties/add" element={<AddFaculty />} />
             <Route path="/faculties/edit/:id" element={<EditFaculty />} />
+            <Route path="/Product" element={<Listproduct />} />
+            <Route path="/product/add" element={<Addproduct />} />
+            <Route path="/product/edit/:id" element={<Editproduct />} />
+            <Route path="/book" element={<Listbook />} />
+            <Route path="/book/add" element={<Addbook />} />
+            <Route path="/book/edit/:id" element={<Editbook />} />
           </Route>
         </Routes>
       </BrowserRouter>
